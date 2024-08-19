@@ -8,7 +8,8 @@
     box-sizing: border-box;     
 }
 
-.navbar { z-index: 999; }
+.navbar { z-index: 9999; }
+.onTop { z-index: 999; }
 
 @font-face { font-family: "Bricolage Grotesque"; src: url("../assets/font/extrabold.TTF"); font-weight: 900; }
 @font-face { font-family: "Bricolage Grotesque"; src: url("../assets/font/regular.TTF"); font-weight: 500; }
@@ -20,3 +21,7 @@
 
 .bg-w-da-wallpaper { background-image: url("../assets/wallapper.png"); }
 .lastNameOpacity { transition: opacity 700ms; }
+
+.group:hover .group-hover { opacity: 1; }
+.group-hover { opacity: 0; }
+.group:hover .imageBalls { scale: 1.1; }

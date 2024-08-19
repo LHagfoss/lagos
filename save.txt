@@ -1,0 +1,11 @@
+                    <div className="flex overflow-hidden select-none">
+                        <motion.div initial={{ y: 100 }} animate={{ y: [20, 0, 0] }} transition={{ delay: 0, duration: 1.5, ease: easeInOut, repeat: Infinity }} className="text-[#e9ebec] bricolage-500"> C </motion.div>
+                        <motion.div initial={{ y: 100 }} animate={{ y: [20, 0, 0] }} transition={{ delay: 0.1, duration: 1.5, ease: easeInOut, repeat: Infinity }} className="text-[#e9ebec] bricolage-500"> l </motion.div>
+                        <motion.div initial={{ y: 100 }} animate={{ y: [20, 0, 0] }} transition={{ delay: 0.2, duration: 1.5, ease: easeInOut, repeat: Infinity }} className="text-[#e9ebec] bricolage-500"> i </motion.div>
+                        <motion.div initial={{ y: 100 }} animate={{ y: [20, 0, 0] }} transition={{ delay: 0.3, duration: 1.5, ease: easeInOut, repeat: Infinity }} className="text-[#e9ebec] bricolage-500"> c </motion.div>
+                        <motion.div initial={{ y: 100 }} animate={{ y: [20, 0, 0] }} transition={{ delay: 0.4, duration: 1.5, ease: easeInOut, repeat: Infinity }} className="text-[#e9ebec] bricolage-500"> k </motion.div>
+                    </div>
+                    <div className="flex overflow-hidden select-none">  
+                        <motion.div initial={{ y: 100 }} animate={{ y: [20, 0, 0] }} transition={{ delay: 0.5, duration: 1.5, ease: easeInOut, repeat: Infinity }} className="text-[#e9ebec] bricolage-500"> M </motion.div>
+                        <motion.div initial={{ y: 100 }} animate={{ y: [20, 0, 0] }} transition={{ delay: 0.6, duration: 1.5, ease: easeInOut, repeat: Infinity }} className="text-[#e9ebec] bricolage-500"> e </motion.div>
+                    </div>
