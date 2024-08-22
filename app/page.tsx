@@ -8,6 +8,9 @@ import Image from "next/image";
 import Navbar from "@components/Navbar";
 import down from "@assets/down.svg"
 import image1 from "@assets/pexels-pixabay-356056.jpg"
+import image2 from "@assets/balls123.jpg"
+import image3 from "@assets/IMG_20240822_101225.jpg"
+import agder from "@assets/agder.png"
 
 export default function Home() {
     const lenisRef = useRef<Lenis | null>(null);
@@ -80,23 +83,58 @@ export default function Home() {
             </div>
             <div className="my-[30px] m-5 text-[#e9ebec] text-[3vw] bricolage-500"><span className="text-[#646b73] mr-2">Latest</span> Projects</div>
             <div className="m-5 h-screen">
-                <div className="relative translate-x-[-50%] left-[50%] h-[110vw] grid grid-cols-9 grid-rows-3 gap-5">
-                    <div className="col-span-6 rounded-[4vw] overflow-hidden relative group">
-                        <div className="w-full h-full">
-                            <Image src={image1} alt="" className="w-full h-full object-cover" />
+                <div className="relative h-[110vw] grid grid-cols-9 grid-rows-3 gap-5">
+                    <div className="col-span-6 rounded-[4vw] overflow-hidden relative group cursor-pointer">
+                        <div className="w-full h-full overflow-hidden absolute">
+                            <Image src={image3} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
                         </div>
-                        <div className="absolute backdrop-blur-xl bottom-0 bg-[#11111183] left-0 m-5 w-[96.5%] h-[18%] rounded-full group-hover transition-opacity duration-500"></div>
+                        <div className="w-full h-full absolute p-5 flex items-end">
+                            <div className="backdrop-blur-xl bottom-0 bg-[#11111183] w-full h-[20%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center p-10">
+                                <div className="flex justify-center items-center gap-3"><Image src={agder} alt="" className="h-[40px] w-[40px]"></Image><div className="text-white text-[1.5vw]">Informasjonsteknologi - Tangen</div></div>
+                            <div className="flex gap-3"><div className="text-white text-[1.5vw]">June</div><div className="text-white text-[1.5vw]">2024</div></div>
+                            </div>
+                        </div>
                     </div>
                     <div className="col-span-3 rounded-[4vw] overflow-hidden relative group cursor-pointer">
-                        <div className="w-full h-full">
-                            <Image src={image1} alt="" className="w-full h-full object-cover imageBalls transition-scale duration-700" />
+                        <div className="w-full h-full overflow-hidden absolute">
+                            <Image src={image1} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
                         </div>
-                        <div className="absolute backdrop-blur-xl bottom-0 bg-[#11111183] left-0 m-5 w-[93%] h-[18%] rounded-full group-hover transition-opacity duration-500"></div>
+                        <div className="w-full h-full absolute p-5 flex items-end">
+                            <div className="backdrop-blur-xl bottom-0 bg-[#11111183] w-full h-[20%] rounded-full group-hover transition-opacity duration-500"></div>
+                        </div>
                     </div>
-                    <div className="border col-span-4 rounded-[3vw] overflow-hidden"></div>
-                    <div className="border col-span-5 row-span-2 rounded-[3vw] overflow-hidden"></div>
-                    <div className="border col-span-2 rounded-[3vw] overflow-hidden"></div>
-                    <div className="border col-span-2 rounded-[3vw] overflow-hidden"></div>
+                    <div className="col-span-4 rounded-[4vw] overflow-hidden relative group cursor-pointer">
+                        <div className="w-full h-full overflow-hidden absolute">
+                            <Image src={image2} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
+                        </div>
+                        <div className="w-full h-full absolute p-5 flex items-end">
+                            <div className="backdrop-blur-xl bottom-0 bg-[#11111183] w-full h-[20%] rounded-full group-hover transition-opacity duration-500"></div>
+                        </div>
+                    </div>
+                    <div className="col-span-5 row-span-2 rounded-[4vw] overflow-hidden relative group cursor-pointer">
+                        <div className="w-full h-full overflow-hidden absolute">
+                            <Image src={image1} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
+                        </div>
+                        <div className="w-full h-full absolute p-5 flex items-end">
+                            <div className="backdrop-blur-xl bottom-0 bg-[#11111183] w-full h-[10%] rounded-full group-hover transition-opacity duration-500"></div>
+                        </div>
+                    </div>
+                    <div className="col-span-2 rounded-[4vw] overflow-hidden relative group cursor-pointer">
+                        <div className="w-full h-full overflow-hidden absolute">
+                            <Image src={image1} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
+                        </div>
+                        <div className="w-full h-full absolute p-5 flex items-end">
+                            <div className="backdrop-blur-xl bottom-0 bg-[#11111183] w-full h-[20%] rounded-full group-hover transition-opacity duration-500"></div>
+                        </div>
+                    </div>
+                    <div className="col-span-2 rounded-[4vw] overflow-hidden relative group cursor-pointer">
+                        <div className="w-full h-full overflow-hidden absolute">
+                            <Image src={image3} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
+                        </div>
+                        <div className="w-full h-full absolute p-5 flex items-end">
+                            <div className="backdrop-blur-xl bottom-0 bg-[#11111183] w-full h-[20%] rounded-full group-hover transition-opacity duration-500"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="w-screen h-screen flex flex-col justify-between">
