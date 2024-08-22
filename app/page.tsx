@@ -11,6 +11,7 @@ import image1 from "@assets/pexels-pixabay-356056.jpg"
 import image2 from "@assets/balls123.jpg"
 import image3 from "@assets/IMG_20240822_101225.jpg"
 import agder from "@assets/agder.png"
+import arrowOut from "@assets/arrowOut.svg"
 
 export default function Home() {
     const lenisRef = useRef<Lenis | null>(null);
@@ -83,24 +84,39 @@ export default function Home() {
             </div>
             <div className="my-[30px] m-5 text-[#e9ebec] text-[3vw] bricolage-500"><span className="text-[#646b73] mr-2">Latest</span> Projects</div>
             <div className="m-5 h-screen">
-                <div className="relative h-[110vw] grid grid-cols-9 grid-rows-3 gap-5">
-                    <div className="col-span-6 rounded-[4vw] overflow-hidden relative group cursor-pointer">
+                <div className="relative h-[75vw] grid grid-cols-9 grid-rows-9 gap-5">
+                    <div className="col-span-6 row-span-5 rounded-[4vw] overflow-hidden relative group cursor-pointer">
                         <div className="w-full h-full overflow-hidden absolute">
                             <Image src={image3} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
                         </div>
                         <div className="w-full h-full absolute p-5 flex items-end">
-                            <div className="backdrop-blur-xl bottom-0 bg-[#11111183] w-full h-[20%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center p-10">
-                                <div className="flex justify-center items-center gap-3"><Image src={agder} alt="" className="h-[40px] w-[40px]"></Image><div className="text-white text-[1.5vw]">Informasjonsteknologi - Tangen</div></div>
-                            <div className="flex gap-3"><div className="text-white text-[1.5vw]">June</div><div className="text-white text-[1.5vw]">2024</div></div>
+                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[10%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
+                                <div className="flex justify-center items-center gap-3 m-6 ml-10">
+                                    <Image src={agder} alt="" className="h-[40px] w-[40px]"></Image>
+                                    <div className="">
+                                        <div className="text-white text-[1.5vw]">Informasjonsteknologi og Medieproduksjon</div>
+                                        <div className="text-white text-[.8vw]">Tangen VGS - July 2024</div>
+                                    </div>
+                                </div>
+                                <button type="button" className="m-6 border rounded-full p-5 flex justify-around items-center"><div className="text-white">Learn More</div> <Image src={arrowOut} alt=""></Image></button>
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-3 rounded-[4vw] overflow-hidden relative group cursor-pointer">
+                    <div className="col-span-3 row-span-5 rounded-[4vw] overflow-hidden relative group cursor-pointer">
                         <div className="w-full h-full overflow-hidden absolute">
                             <Image src={image1} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
                         </div>
                         <div className="w-full h-full absolute p-5 flex items-end">
-                            <div className="backdrop-blur-xl bottom-0 bg-[#11111183] w-full h-[20%] rounded-full group-hover transition-opacity duration-500"></div>
+                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[20%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
+                                <div className="flex justify-center items-center gap-3 m-6 ml-10">
+                                    <Image src={agder} alt="" className="h-[40px] w-[40px]"></Image>
+                                    <div className="">
+                                        <div className="text-white text-[1.5vw]">Media</div>
+                                        <div className="text-white text-[.8vw]">Tangen VGS - July 2024</div>
+                                    </div>
+                                </div>
+                                <button type="button" className="m-6 border rounded-full p-5 flex justify-around items-center"><div className="text-white">Learn More</div> <Image src={arrowOut} alt=""></Image></button>
+                            </div>
                         </div>
                     </div>
                     <div className="col-span-4 rounded-[4vw] overflow-hidden relative group cursor-pointer">
@@ -108,7 +124,16 @@ export default function Home() {
                             <Image src={image2} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
                         </div>
                         <div className="w-full h-full absolute p-5 flex items-end">
-                            <div className="backdrop-blur-xl bottom-0 bg-[#11111183] w-full h-[20%] rounded-full group-hover transition-opacity duration-500"></div>
+                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[20%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
+                                <div className="flex justify-center items-center gap-3 m-6 ml-10">
+                                    <Image src={agder} alt="" className="h-[40px] w-[40px]"></Image>
+                                    <div className="">
+                                        <div className="text-white text-[1.5vw]">Media</div>
+                                        <div className="text-white text-[.8vw]">Tangen VGS - July 2024</div>
+                                    </div>
+                                </div>
+                                <button type="button" className="m-6 border rounded-full p-5 flex justify-around items-center"><div className="text-white">Learn More</div> <Image src={arrowOut} alt=""></Image></button>
+                            </div>
                         </div>
                     </div>
                     <div className="col-span-5 row-span-2 rounded-[4vw] overflow-hidden relative group cursor-pointer">
@@ -116,7 +141,16 @@ export default function Home() {
                             <Image src={image1} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
                         </div>
                         <div className="w-full h-full absolute p-5 flex items-end">
-                            <div className="backdrop-blur-xl bottom-0 bg-[#11111183] w-full h-[10%] rounded-full group-hover transition-opacity duration-500"></div>
+                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[10%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
+                                <div className="flex justify-center items-center gap-3 m-6 ml-10">
+                                    <Image src={agder} alt="" className="h-[40px] w-[40px]"></Image>
+                                    <div className="">
+                                        <div className="text-white text-[1.5vw]">Media</div>
+                                        <div className="text-white text-[.8vw]">Tangen VGS - July 2024</div>
+                                    </div>
+                                </div>
+                                <button type="button" className="m-6 border rounded-full p-5 flex justify-around items-center"><div className="text-white">Learn More</div> <Image src={arrowOut} alt=""></Image></button>
+                            </div>
                         </div>
                     </div>
                     <div className="col-span-2 rounded-[4vw] overflow-hidden relative group cursor-pointer">
@@ -124,7 +158,16 @@ export default function Home() {
                             <Image src={image1} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
                         </div>
                         <div className="w-full h-full absolute p-5 flex items-end">
-                            <div className="backdrop-blur-xl bottom-0 bg-[#11111183] w-full h-[20%] rounded-full group-hover transition-opacity duration-500"></div>
+                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[20%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
+                                <div className="flex justify-center items-center gap-3 m-6 ml-10">
+                                    <Image src={agder} alt="" className="h-[40px] w-[40px]"></Image>
+                                    <div className="">
+                                        <div className="text-white text-[1vw]">Media</div>
+                                        <div className="text-white text-[.6vw]">Tangen VGS - July 2024</div>
+                                    </div>
+                                </div>
+                                <button type="button" className="m-6 border rounded-full p-5 flex justify-around items-center"><Image src={arrowOut} alt=""></Image></button>
+                            </div>
                         </div>
                     </div>
                     <div className="col-span-2 rounded-[4vw] overflow-hidden relative group cursor-pointer">
@@ -132,7 +175,16 @@ export default function Home() {
                             <Image src={image3} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
                         </div>
                         <div className="w-full h-full absolute p-5 flex items-end">
-                            <div className="backdrop-blur-xl bottom-0 bg-[#11111183] w-full h-[20%] rounded-full group-hover transition-opacity duration-500"></div>
+                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[20%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
+                                <div className="flex justify-center items-center gap-3 m-6 ml-10">
+                                    <Image src={agder} alt="" className="h-[40px] w-[40px]"></Image>
+                                    <div className="">
+                                        <div className="text-white text-[1vw]">Media</div>
+                                        <div className="text-white text-[.6vw]">Tangen VGS - July 2024</div>
+                                    </div>
+                                </div>
+                                <button type="button" className="m-6 border rounded-full p-5 flex justify-around items-center"><Image src={arrowOut} alt=""></Image></button>
+                            </div>
                         </div>
                     </div>
                 </div>
