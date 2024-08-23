@@ -24,4 +24,4 @@
 
 .group:hover .group-hover { opacity: 1; }
 .group-hover { opacity: 0; }
-.group:hover .imageBalls { scale: 1.05; filter: blur(1px); }
+.group:hover .imageBalls { scale: 1.05; opacity: 0.8; }

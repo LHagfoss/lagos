@@ -18,6 +18,8 @@ export default function Home() {
     const lenisRef = useRef<Lenis | null>(null);
     const [time, setTime] = useState(new Date());
 
+    function openTime() { window.open("https://dayspedia.com/time/online/") }
+
     useEffect(() => {
         const timer = setInterval(() => {
             setTime(new Date());
@@ -61,7 +63,7 @@ export default function Home() {
                     <Image src={down} alt="" className="w-[50px]" />
                 </a>
             </motion.div>
-            <motion.div initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1.8, duration: 1, ease: easeInOut }} className="text-[1vw] z-10 m-5 right-0 bottom-0 py-3 px-5 gap-2 fixed  bg-[#34383c] hover:bg-[#4c5257] duration-300 rounded-full shadow-xl select-none flex justify-center items-center min-w-[120px]">
+            <motion.div initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1.8, duration: 1, ease: easeInOut }} onClick={openTime} className="cursor-pointer text-[1vw] z-10 m-5 right-0 bottom-0 py-3 px-5 gap-2 fixed  bg-[#34383c] hover:bg-[#4c5257] duration-300 rounded-full shadow-xl select-none flex justify-center items-center min-w-[120px]">
                 <div className="">
                     <Image src={clock} alt="" className="w-[25px]"></Image>
                 </div> 
@@ -86,19 +88,19 @@ export default function Home() {
                 <div className="bg-[#34383c] hover:bg-[#4c5257] max-w-[250px] min-h-[50px] duration-300 mb-5 py-3 px-4 rounded-full cursor-pointer flex justify-around items-center"><div className="relative ml-4 flex justify-center items-center"><motion.div initial={{ opacity: 0, scale: 0.7 }} animate={{ opacity: [0, 1, 0], scale: 1 }} transition={{ delay: 0, duration: 1, ease: easeInOut, repeat: Infinity }} className="absolute rounded-full min-w-[23px] min-h-[23px] bg-[#1c5e1d] flex justify-center items-center"></motion.div><div className="z-10 rounded-full min-w-[15px] min-h-[15px] bg-[#38c13b]"></div></div><button type="button" className="text-[#e9ebec] text-[1rem] bricolage-500 w-full h-full">Available for Work</button></div>
                <span className="text-[#646b73] mr-2"> I'm Lucas Hagfoss — a user</span><span className="">experience & interface designer <span className="text-[#646b73] mr-1">from Norway, focusing on building functional websites that will</span> increase conversion <span className="text-[#646b73] mr-1">and help</span> reach customers.</span>
             </div>
-            <div className="my-[30px] m-5 text-[#e9ebec] text-[3vw] bricolage-500"><span className="text-[#646b73] mr-2">Latest</span> Projects</div>
+            <div className="my-[30px] m-5 text-[#e9ebec] text-[3vw] bricolage-500"><span className="text-[#646b73] mr-1">My</span> Projects</div>
             <div className="m-5 h-screen">
-                <div className="relative h-[75vw] grid grid-cols-9 grid-rows-9 gap-5">
-                    <div className="col-span-6 row-span-5 rounded-[4vw] overflow-hidden relative group cursor-pointer">
+                <div className="relative h-[100vw] grid grid-cols-9 grid-rows-9 gap-5">
+                    <div className="col-span-6 row-span-4 rounded-[70px] overflow-hidden relative group cursor-pointer">
                         <div className="w-full h-full overflow-hidden absolute">
-                            <Image src={image3} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
+                            <Image src={image3} alt="" className="imageBalls transition-scale duration-500  w-full h-full object-cover" />
                         </div>
                         <div className="w-full h-full absolute p-5 flex items-end">
-                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[10%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
+                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[12%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
                                 <div className="flex justify-center items-center gap-3 m-6 ml-10">
                                     <Image src={agder} alt="" className="h-[40px] w-[40px]"></Image>
                                     <div className="">
-                                        <div className="text-white text-[1.5vw]">Informasjonsteknologi og Medieproduksjon</div>
+                                        <div className="text-white text-[1.2vw]">Informasjonsteknologi og Medieproduksjon</div>
                                         <div className="text-white text-[.8vw]">Tangen VGS - July 2024</div>
                                     </div>
                                 </div>
@@ -106,9 +108,26 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-3 row-span-5 rounded-[4vw] overflow-hidden relative group cursor-pointer">
+                    <div className="col-span-3 row-span-4 rounded-[70px] overflow-hidden relative group cursor-pointer">
                         <div className="w-full h-full overflow-hidden absolute">
-                            <Image src={image1} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
+                            <Image src={image1} alt="" className="imageBalls transition-scale duration-500  w-full h-full object-cover" />
+                        </div>
+                        <div className="w-full h-full absolute p-5 flex items-end">
+                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[12%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
+                                <div className="flex justify-center items-center gap-3 m-6 ml-10">
+                                    <Image src={agder} alt="" className="h-[40px] w-[40px]"></Image>
+                                    <div className="">
+                                        <div className="text-white text-[1.2vw]">Skolearbeid</div>
+                                        <div className="text-white text-[.8vw]">Tangen VGS - July 2024</div>
+                                    </div>
+                                </div>
+                                <button type="button" className="m-6 border rounded-full p-5 flex justify-around items-center"><div className="text-white">Learn More</div> <Image src={arrowOut} alt=""></Image></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-4 row-span-3 rounded-[70px] overflow-hidden relative group cursor-pointer">
+                        <div className="w-full h-full overflow-hidden absolute">
+                            <Image src={image2} alt="" className="imageBalls transition-scale duration-500  w-full h-full object-cover" />
                         </div>
                         <div className="w-full h-full absolute p-5 flex items-end">
                             <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[20%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
@@ -123,16 +142,16 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-4 rounded-[4vw] overflow-hidden relative group cursor-pointer">
+                    <div className="col-span-5 row-span-5 rounded-[70px] overflow-hidden relative group cursor-pointer">
                         <div className="w-full h-full overflow-hidden absolute">
-                            <Image src={image2} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
+                            <Image src={image1} alt="" className="imageBalls transition-scale duration-500  w-full h-full object-cover" />
                         </div>
                         <div className="w-full h-full absolute p-5 flex items-end">
-                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[20%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
+                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[12%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
                                 <div className="flex justify-center items-center gap-3 m-6 ml-10">
                                     <Image src={agder} alt="" className="h-[40px] w-[40px]"></Image>
                                     <div className="">
-                                        <div className="text-white text-[1.5vw]">Media</div>
+                                        <div className="text-white text-[1.2vw]">Skolearbeid</div>
                                         <div className="text-white text-[.8vw]">Tangen VGS - July 2024</div>
                                     </div>
                                 </div>
@@ -140,62 +159,44 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-5 row-span-2 rounded-[4vw] overflow-hidden relative group cursor-pointer">
+                    <div className="col-span-2 row-span-2 rounded-[70px] overflow-hidden relative group cursor-pointer">
                         <div className="w-full h-full overflow-hidden absolute">
-                            <Image src={image1} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
+                            <Image src={image1} alt="" className="imageBalls transition-scale duration-500  w-full h-full object-cover" />
                         </div>
                         <div className="w-full h-full absolute p-5 flex items-end">
-                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[10%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
+                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[25%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
                                 <div className="flex justify-center items-center gap-3 m-6 ml-10">
                                     <Image src={agder} alt="" className="h-[40px] w-[40px]"></Image>
                                     <div className="">
-                                        <div className="text-white text-[1.5vw]">Media</div>
+                                        <div className="text-white text-[1.2vw]">Skolearbeid</div>
                                         <div className="text-white text-[.8vw]">Tangen VGS - July 2024</div>
-                                    </div>
-                                </div>
-                                <button type="button" className="m-6 border rounded-full p-5 flex justify-around items-center"><div className="text-white">Learn More</div> <Image src={arrowOut} alt=""></Image></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-span-2 rounded-[4vw] overflow-hidden relative group cursor-pointer">
-                        <div className="w-full h-full overflow-hidden absolute">
-                            <Image src={image1} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
-                        </div>
-                        <div className="w-full h-full absolute p-5 flex items-end">
-                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[20%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
-                                <div className="flex justify-center items-center gap-3 m-6 ml-10">
-                                    <Image src={agder} alt="" className="h-[40px] w-[40px]"></Image>
-                                    <div className="">
-                                        <div className="text-white text-[1vw]">Media</div>
-                                        <div className="text-white text-[.6vw]">Tangen VGS - July 2024</div>
                                     </div>
                                 </div>
                                 <button type="button" className="m-6 border rounded-full p-5 flex justify-around items-center"><Image src={arrowOut} alt=""></Image></button>
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-2 rounded-[4vw] overflow-hidden relative group cursor-pointer">
+                    <div className="col-span-2 row-span-2 rounded-[70px] overflow-hidden relative group cursor-pointer">
                         <div className="w-full h-full overflow-hidden absolute">
-                            <Image src={image3} alt="" className="rounded-[4vw] imageBalls transition-scale duration-500  w-full h-full object-cover" />
+                            <Image src={image3} alt="" className="imageBalls transition-scale duration-500  w-full h-full object-cover" />
                         </div>
                         <div className="w-full h-full absolute p-5 flex items-end">
-                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[20%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
+                            <div className="backdrop-blur-xl bottom-0 bg-[#000000bc] w-full h-[25%] rounded-full group-hover transition-opacity duration-500 flex justify-between items-center">
                                 <div className="flex justify-center items-center gap-3 m-6 ml-10">
                                     <Image src={agder} alt="" className="h-[40px] w-[40px]"></Image>
                                     <div className="">
-                                        <div className="text-white text-[1vw]">Media</div>
-                                        <div className="text-white text-[.6vw]">Tangen VGS - July 2024</div>
+                                        <div className="text-white text-[1.2vw]">Skolearbeid</div>
+                                        <div className="text-white text-[.8vw]">Tangen VGS - July 2024</div>
                                     </div>
                                 </div>
-                                <button type="button" className="m-6 border rounded-full p-5 flex justify-around items-center"><Image src={arrowOut} alt=""></Image></button>
+                                <button type="button" className="m-6 border rounded-full p-5 flex justify-around items-center"> <Image src={arrowOut} alt=""></Image></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="w-screen h-screen flex flex-col justify-between">
-
-            </div>
+            <div className="w-screen h-[100vh]"></div>
+            <div className="w-screen h-[100vh]"></div>
         </div>
     );
 }
