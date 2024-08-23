@@ -12,6 +12,7 @@ import image2 from "@assets/balls123.jpg"
 import image3 from "@assets/IMG_20240822_101225.jpg"
 import agder from "@assets/agder.png"
 import arrowOut from "@assets/arrowOut.svg"
+import clock from "@assets/clock.svg"
 
 export default function Home() {
     const lenisRef = useRef<Lenis | null>(null);
@@ -60,7 +61,10 @@ export default function Home() {
                     <Image src={down} alt="" className="w-[50px]" />
                 </a>
             </motion.div>
-            <motion.div initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1.8, duration: 1, ease: easeInOut }} className="z-10 m-5 right-0 bottom-0 p-3 px-5 fixed  bg-[#34383c] hover:bg-[#4c5257] duration-300 rounded-full shadow-xl select-none flex justify-center items-center min-w-[120px]">
+            <motion.div initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1.8, duration: 1, ease: easeInOut }} className="text-[1vw] z-10 m-5 right-0 bottom-0 py-3 px-5 gap-2 fixed  bg-[#34383c] hover:bg-[#4c5257] duration-300 rounded-full shadow-xl select-none flex justify-center items-center min-w-[120px]">
+                <div className="">
+                    <Image src={clock} alt="" className="w-[25px]"></Image>
+                </div> 
                 <div className="text-[#e9ebec] bricolage-500 flex">
                     <AnimatePresence mode="popLayout">
                         {time.toTimeString().slice(0, 8).split('').map((char, index) => (

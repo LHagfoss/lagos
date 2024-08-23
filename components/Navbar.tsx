@@ -60,11 +60,11 @@ export default function Navbar() {
                     </div>
                 </motion.h1>
                 <div className="m-4 items-center top-0 right-0 flex gap-[1vw] absolute overflow-hidden">
-                    <motion.div initial={{ y: 50, }} animate={{ y: 0, }} transition={{ delay: 1.2, duration: 1, ease: easeInOut }}> <Link href="/" className="text-[#e9ebec] bricolage-500 text-[1em]">About me</Link> </motion.div>
+                    <motion.div initial={{ y: 50, }} animate={{ y: 0, }} transition={{ delay: 1.2, duration: 1, ease: easeInOut }}> <Link href="/" className="text-[#e9ebec] bricolage-500 text-[1vw]">About me</Link> </motion.div>
                     <motion.div initial={{ y: 50, }} animate={{ y: 0, }} transition={{ delay: 1.3, duration: 1, ease: easeInOut }}> <Link href="/" className="text-[#e9ebec] bricolage-500 text-[1vw]">Work</Link> </motion.div>
                     <motion.div initial={{ y: 50, }} animate={{ y: 0, }} transition={{ delay: 1.4, duration: 1, ease: easeInOut }}> <Link href="/" className="text-[#e9ebec] bricolage-500 text-[1vw]">Insight</Link> </motion.div>
                     <motion.div initial={{ y: 50, }} animate={{ y: 0, }} transition={{ delay: 1.5, duration: 1, ease: easeInOut }}> <Link href="/" className="text-[#e9ebec] bricolage-500 text-[1vw]">Contact</Link> </motion.div>
-                    <motion.div initial={{ y: 50, }} animate={{ y: 0, }} transition={{ delay: 1.6, duration: 1, ease: easeInOut }}> <div className="shadow-xl bg-[#34383c] hover:bg-[#4c5257] duration-300 py-3 px-4 rounded-full cursor-pointer flex gap-2  text-[1vw]"><Image src={copy} alt="" className=""></Image><button type="button" className="text-[#e9ebec] bricolage-500 w-full h-full underline">Hello@lhagfoss.studio</button></div> </motion.div></div>
+                    <motion.div initial={{ y: 70, }} animate={{ y: 0, }} transition={{ delay: 1.6, duration: 1, ease: easeInOut }}> <div className="shadow-xl bg-[#34383c] hover:bg-[#4c5257] duration-300 py-3 px-7 rounded-full cursor-pointer flex gap-2  text-[1vw]"><Image src={copy} alt="" className=""></Image><button type="button" className="text-[#e9ebec] bricolage-500 w-full h-full underline">Hello@lhagfoss.studio</button></div> </motion.div></div>
             </div>
         </div>
     )
